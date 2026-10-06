@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Mini Pokédex</h1>
+    <p class="subtitulo">Busca un Pokémon por nombre o número usando la PokéAPI</p>
+ 
+    <form id="formulario" class="buscador">
+      <input
+        type="text"
+        id="entrada"
+        placeholder="Ej: pikachu o 25"
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Buscar</button>
+      <button type="button" id="aleatorio" title="Pokémon aleatorio">🎲</button>
+    </form>
+ 
+    <!-- Aquí se muestran el mensaje de estado y el resultado -->
+    <p id="mensaje" class="mensaje"></p>
+ 
+    <section id="tarjeta" class="tarjeta oculto">
+      <img id="imagen" alt="">
+      <h2 id="nombre"></h2>
+      <p id="numero" class="numero"></p>
+      <div id="tipos" class="tipos"></div>
+ 
+      <div class="datos">
+        <div><span>Altura</span><strong id="altura"></strong></div>
+        <div><span>Peso</span><strong id="peso"></strong></div>
+      </div>
+ 
+      <h3>Estadísticas base</h3>
+      <div id="stats" class="stats"></div>
+    </section>
+  </main>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
