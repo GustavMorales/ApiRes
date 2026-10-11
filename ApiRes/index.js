@@ -1,4 +1,4 @@
-const server = require("./server/app")
+const server = require("./server/app.js")
 
 
 server.listen(3000,()=>{
